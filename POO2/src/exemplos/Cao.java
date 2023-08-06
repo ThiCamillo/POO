@@ -6,7 +6,7 @@ public class Cao {
   String raca;
   double peso;
 
-  public static void falar(){
+  void falar(){
     if(peso > 60) {
       System.out.println("Woof, Woof, Woof");
     }else{
