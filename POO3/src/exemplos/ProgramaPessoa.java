@@ -21,7 +21,12 @@ public class ProgramaPessoa {
 		aluno2.setMatricula(teclado.nextInt());
 		teclado.nextLine();
 		
-		
+		//matricula mais antiga
+		if(aluno1.getMatricula() < aluno2.getMatricula()) {
+			System.out.println("O aluno/a " + aluno1.getNome() + " é o mais antigo.");
+		}else {
+			System.out.println("O aluno/a " + aluno2.getNome() + " é o mais antigo.");
+		}
 		
 		
 		teclado.close();
