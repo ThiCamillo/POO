@@ -16,12 +16,10 @@ public class ProgramaVeiculo {
 		Moto[] listaMotos = { m1, m2, m3 };
 
 		// 1 - calcular o valor total do carros
-		double valorTotal
-		Carro totalCarro = listaCarros[0];
-		for(int i=0; i < listaCarros.length; i++) {
-			totalCarro += listaCarros[i].getValor();
-		}
-				
+		double valorTotalCarros = calcularValorTotalCarros(listaCarros);
+		System.out.println("Valor total dos carros R$: " + valorTotalCarros);
+		
+						
 		// 2 - informar o modelo do carro com maior potencia
 		Carro carro = listaCarros[0];
 		for(int i=0; i < listaCarros.length; i++) {
@@ -31,13 +29,18 @@ public class ProgramaVeiculo {
 		}
 		System.out.println("O carro com maior potencia é: " + carro.getModelo());
 	
-		
-		
-		
-	}
+
+
+	
 
 	// 1 - calcular o valor total do carros
-	
+	private void calcularValorTotalCarros(listaCarros) {
+		double acumulador = 0;
+		for(int i=0; i < listaCarros.length; i++) {
+			acumulador += listaCarros[i].getValor();
+		}
+		return acumulador;
+	}
 	
 	// 2 - informar o modelo do carro com maior potencia
 	
