@@ -21,5 +21,7 @@ public class Carro extends Veiculo{
 		this.potenciaHP = potenciaHP;
 	}
 	
+	private static void calcularMaiorPotencia() {
+	}
 	
 }
