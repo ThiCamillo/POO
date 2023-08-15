@@ -27,14 +27,14 @@ public class ProgramaVeiculo {
 				carro = listaCarros[i];
 			}
 		}
-		System.out.println("O carro com maior potencia é: " + carro.getModelo());
+		System.out.println("O carro com maior potencia Ã©: " + carro.getModelo());
 	
 
 
 	
 
 	// 1 - calcular o valor total do carros
-	private void calcularValorTotalCarros(listaCarros) {
+	private void double calcularValorTotalCarros(Carros[] listaCarros) {
 		double acumulador = 0;
 		for(int i=0; i < listaCarros.length; i++) {
 			acumulador += listaCarros[i].getValor();
