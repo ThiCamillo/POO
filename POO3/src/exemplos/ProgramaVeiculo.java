@@ -21,6 +21,9 @@ public class ProgramaVeiculo {
 		
 						
 		// 2 - informar o modelo do carro com maior potencia
+identificarCarroMaiorPotencia(listaCarros);
+
+
 		Carro carro = listaCarros[0];
 		for(int i=0; i < listaCarros.length; i++) {
 			if(listaCarros[i].getPotenciaHP() > carro.getPotenciaHP()) {
