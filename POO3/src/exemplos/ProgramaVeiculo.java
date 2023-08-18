@@ -15,37 +15,37 @@ public class ProgramaVeiculo {
 		Carro[] listaCarros = { c1, c2, c3 };
 		Moto[] listaMotos = { m1, m2, m3 };
 
-		// 1 - calcular o valor total do carros
-		double valorTotalCarros = calcularValorTotalCarros(listaCarros);
-		System.out.println("Valor total dos carros R$: " + valorTotalCarros);
-		
-						
-		// 2 - informar o modelo do carro com maior potencia
-identificarCarroMaiorPotencia(listaCarros);
+//		// 1 - calcular o valor total do carros
+//		double valorTotalCarros = calcularValorTotalCarros(listaCarros);
+//		System.out.println("Valor total dos carros R$: " + valorTotalCarros);
+//		
+//						
+//		// 2 - informar o modelo do carro com maior potencia
+//identificarCarroMaiorPotencia(listaCarros);
+//
+//
+//		Carro carro = listaCarros[0];
+//		for(int i=0; i < listaCarros.length; i++) {
+//			if(listaCarros[i].getPotenciaHP() > carro.getPotenciaHP()) {
+//				carro = listaCarros[i];
+//			}
+//		}
+//		System.out.println("O carro com maior potencia é: " + carro.getModelo());
+//	
 
 
-		Carro carro = listaCarros[0];
-		for(int i=0; i < listaCarros.length; i++) {
-			if(listaCarros[i].getPotenciaHP() > carro.getPotenciaHP()) {
-				carro = listaCarros[i];
-			}
-		}
-		System.out.println("O carro com maior potencia é: " + carro.getModelo());
 	
 
-
-	
-
-	// 1 - calcular o valor total do carros
-	private void double calcularValorTotalCarros(Carros[] listaCarros) {
-		double acumulador = 0;
-		for(int i=0; i < listaCarros.length; i++) {
-			acumulador += listaCarros[i].getValor();
-		}
-		return acumulador;
-	}
-	
-	// 2 - informar o modelo do carro com maior potencia
+//	// 1 - calcular o valor total do carros
+//	private void double calcularValorTotalCarros(Carros[] listaCarros) {
+//		double acumulador = 0;
+//		for(int i=0; i < listaCarros.length; i++) {
+//			acumulador += listaCarros[i].getValor();
+//		}
+//		return acumulador;
+//	}
+//	
+//	// 2 - informar o modelo do carro com maior potencia
 	
 //	
 //	private static void calcularValorTotal(listaCarros) {
@@ -59,4 +59,6 @@ identificarCarroMaiorPotencia(listaCarros);
 //	private static void calcularValor() {
 //	}
 
+}
+	
 }
