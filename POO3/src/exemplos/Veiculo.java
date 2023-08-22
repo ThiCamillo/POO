@@ -6,7 +6,7 @@ public class Veiculo {
 	private String fabricante;
 	private int ano;
 	private double valor;
-	
+
 	public Veiculo(String modelo, String fabricante, int ano, double valor) {
 		super();
 		this.modelo = modelo;
@@ -50,10 +50,9 @@ public class Veiculo {
 	public void setValor(double valor) {
 		this.valor = valor;
 	}
-	
-	
-	
-	
-	
-	
+
+	public void calcularDepreciacao() {
+		this.valor = this.valor * 0.95;
+	}
+
 }

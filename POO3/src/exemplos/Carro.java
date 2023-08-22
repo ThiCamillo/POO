@@ -24,4 +24,11 @@ public class Carro extends Veiculo{
 	private static void calcularMaiorPotencia() {
 	}
 	
+	@Override
+	public void calcularDepreciacao() {
+		super.calcularDepreciacao();
+		double depreciacao = this.getValor() - 100;
+		this.setValor(depreciacao);
+	}
+	
 }
