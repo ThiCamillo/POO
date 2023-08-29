@@ -1,6 +1,6 @@
 package exemplos;
 
-public class Aluno extends Pessoa{
+public class Aluno extends Pessoa {
 
 	public Aluno() {
 		super();
@@ -12,5 +12,4 @@ public class Aluno extends Pessoa{
 		// TODO Auto-generated constructor stub
 	}
 
-		
 }
