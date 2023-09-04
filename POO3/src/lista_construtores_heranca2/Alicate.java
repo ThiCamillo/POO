@@ -22,6 +22,4 @@ public class Alicate extends FerramentaManual {
 		this.tamanhoPol = tamanhoPol;
 	}
 
-	
-	
 }

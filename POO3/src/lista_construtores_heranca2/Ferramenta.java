@@ -55,13 +55,13 @@ public class Ferramenta {
 	}
 
 	public double calcularVidaUtil(String periodo) {
-	double retorno = 0;
-	if(periodo.toUpperCase().equals("Dia")) {
-		retorno = this.getFatorDesgaste() / 24;
-	}else {
-		retorno = (this.calcularVidaUtil() /24) / 7;		
-	}
-	return retorno;
+		double retorno = 0;
+		if (periodo.toUpperCase().equals("Dia")) {
+			retorno = this.getFatorDesgaste() / 24;
+		} else {
+			retorno = (this.calcularVidaUtil() / 24) / 7;
+		}
+		return retorno;
 
 	}
 

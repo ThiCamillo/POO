@@ -16,12 +16,20 @@ public class Oficina {
 		System.out.println("Consumo mensal: " + (consumoDiario * 30));
 		System.out.println("Consumo semanal: " + (consumoDiario * 7));
 
+		
+		System.out.println("----------forma lusitana----------------------------");
+				
 //	//maior vida util
 //	if(al1.calcularVidaUtil() > al2.calcularVidaUtil())
 //		&& (al1.calcularVidaUtil() > al2.calcularVidaUtil())
 //		{
 //		System.out.println();
 
+		System.out.println("----------usando && and----------------------------");
+		
+		
+		System.out.println("----------polimorfismo----------------------------");
+		
 		FerramentaManual[] fm = { al1, al2, m1, m2, se1 };
 		FerramentaManual resultado = fm[0];
 		for (int i = 0; i < fm.length; i++) {
@@ -30,7 +38,7 @@ public class Oficina {
 			}
 		}
 		System.out.println("Ferramenta: " + resultado.getModelo());
-		System.out.println("Vida �til: " + resultado.calcularVidaUtil());
+		System.out.println("Vida util: " + resultado.calcularVidaUtil());
 
 	}
 }

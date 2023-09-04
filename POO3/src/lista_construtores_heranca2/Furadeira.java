@@ -10,6 +10,5 @@ public class Furadeira extends FerramentaEletrica {
 	public Furadeira() {
 		super();
 	}
-	
-	
+
 }

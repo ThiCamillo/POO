@@ -1,6 +1,6 @@
 package lista_construtores_heranca2;
 
-public class Martelo extends FerramentaManual{
+public class Martelo extends FerramentaManual {
 
 	private double tamanhoMm;
 
@@ -21,7 +21,4 @@ public class Martelo extends FerramentaManual{
 		this.tamanhoMm = tamanhoMm;
 	}
 
-	
-	
-	
 }
