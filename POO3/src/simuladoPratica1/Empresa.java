@@ -6,16 +6,16 @@ public class Empresa {
 	private String cnpj;
 	private Endereco endereco;
 
-	public Empresa() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
 	public Empresa(String nome, String cnpj, Endereco endereco) {
 		super();
 		this.nome = nome;
 		this.cnpj = cnpj;
 		this.endereco = endereco;
+	}
+
+	public Empresa() {
+		super();
+		// TODO Auto-generated constructor stub
 	}
 
 	public String getNome() {
@@ -44,12 +44,7 @@ public class Empresa {
 
 	@Override
 	public String toString() {
-		return "Empresa:"
-				+ "\nNome: " + nome
-				+ "\nCNPJ: " + cnpj 
-				+ "\nEndereco: " + endereco;
+		return "Empresa:" + "\nNome: " + nome + "\nCNPJ: " + cnpj + "\nEndereco: " + endereco;
 	}
 
-	
-	
 }

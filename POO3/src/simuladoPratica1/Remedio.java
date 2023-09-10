@@ -6,16 +6,15 @@ public class Remedio {
 	private double preco;
 	private Laboratorio laboratorio;
 
-	public Remedio() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
-
 	public Remedio(String nome, double preco, Laboratorio laboratorio) {
 		super();
 		this.nome = nome;
 		this.preco = preco;
 		this.laboratorio = laboratorio;
+	}
+
+	public Remedio() {
+		super();
 	}
 
 	public String getNome() {
@@ -44,12 +43,7 @@ public class Remedio {
 
 	@Override
 	public String toString() {
-		return "Remedio: "
-				+ "\nNome: " + nome
-				+ "\nPreco: " + preco
-				+ "\nLaboratorio: " + laboratorio;
+		return "Remedio: " + "\nNome: " + nome + "\nPreco: " + preco + "\nLaboratorio: " + laboratorio;
 	}
 
-	
-	
 }

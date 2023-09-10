@@ -7,11 +7,6 @@ public class Endereco {
 	private String bairro;
 	private String cidade;
 	private String estado;
-	
-	public Endereco() {
-		super();
-		// TODO Auto-generated constructor stub
-	}
 
 	public Endereco(String rua, int numero, String bairro, String cidade, String estado) {
 		super();
@@ -20,6 +15,10 @@ public class Endereco {
 		this.bairro = bairro;
 		this.cidade = cidade;
 		this.estado = estado;
+	}
+
+	public Endereco() {
+		super();
 	}
 
 	public String getRua() {
@@ -64,14 +63,8 @@ public class Endereco {
 
 	@Override
 	public String toString() {
-		return "Endereco:"
-				+ "\nRua: " + rua 
-				+ "\nNumero: " + numero
-				+ "\nBairro: " + bairro
-				+ "\nCidade: " + cidade
+		return "Endereco:" + "\nRua: " + rua + "\nNumero: " + numero + "\nBairro: " + bairro + "\nCidade: " + cidade
 				+ "\nEstado: " + estado;
 	}
-	
-	
-	
+
 }

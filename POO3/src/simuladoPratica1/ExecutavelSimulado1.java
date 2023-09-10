@@ -21,15 +21,16 @@ public class ExecutavelSimulado1 {
 		Remedio rem7 = new Remedio("LOSARTANA", 45.00, lab2);
 		Remedio rem8 = new Remedio("TORSILAX", 15.00, lab2);
 
-		Remedio remedios[] = { rem1, rem1, rem1, rem1, rem2, rem2, rem2, rem3, rem3, rem4, rem5, rem6, rem6, rem7, rem7,
+		Remedio[] listaRemedios = { rem1, rem1, rem1, rem1, rem2, rem2, rem2, rem3, rem3, rem4, rem5, rem6, rem6, rem7, rem7,
 				rem7, rem8, rem8, rem8, rem8 };
 
+		Estoque estoque1 = new Estoque("Luciano", listaRemedios);
+		
 		Farmacia far1 = new Farmacia("FARMÁCIA DO SENAC", "12.345.678/0001-33", endFarm);
-
-		Estoque est1 = new Estoque("Luciano", remedios);
+		
 
 		//3a
-		System.out.println("O responsável pelo estoque é o: " + est1.getClass());
+		System.out.println("O responsável pelo estoque é o: " + estoque1.toString());
 		
 	}
 }
