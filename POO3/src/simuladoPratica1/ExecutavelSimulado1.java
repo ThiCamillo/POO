@@ -27,10 +27,9 @@ public class ExecutavelSimulado1 {
 		Estoque estoque1 = new Estoque("Luciano", listaRemedios);
 		
 		Farmacia far1 = new Farmacia("FARMÁCIA DO SENAC", "12.345.678/0001-33", endFarm);
-		
 
 		//3a
-		System.out.println("O responsável pelo estoque é o: " + estoque1.toString());
+		System.out.println("O responsável pelo estoque é o: " + estoque1.getResponsavel());
 		
 	}
 }
