@@ -43,7 +43,7 @@ public class Remedio {
 
 	@Override
 	public String toString() {
-		return "Remedio: " + "\nNome: " + nome + "\nPreco: " + preco + "\nLaboratorio: " + laboratorio;
+		return "Remedio: " + "\nNome: " + this.getNome() + "\nPreco: " + this.getPreco() + "\nLaboratorio: " + this.getLaboratorio();
 	}
 
 }

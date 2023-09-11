@@ -15,7 +15,6 @@ public class Empresa {
 
 	public Empresa() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getNome() {
@@ -44,7 +43,9 @@ public class Empresa {
 
 	@Override
 	public String toString() {
-		return "Empresa:" + "\nNome: " + nome + "\nCNPJ: " + cnpj + "\nEndereco: " + endereco;
+		return "Nome: " + this.getNome()
+		+ ", CNPJ: " + this.getCnpj()
+		+ ", Endereco: " + this.getEndereco();
 	}
 
 }

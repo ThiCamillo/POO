@@ -20,4 +20,14 @@ public class Farmacia extends Empresa {
 		this.estoque = estoque;
 	}
 
+	public void informarNomeDoResponsavelPeloEstoque() {
+		System.out.println("O responsável pelo estoque é o: " + this.getEstoque().getResponsavel());
+		
+	}
+
+	public void calcularTotalEstoque() {
+		double total = this.getEstoque().calcularEstoque();
+		System.out.println("Total do Estoque:" + total);
+	}
+
 }

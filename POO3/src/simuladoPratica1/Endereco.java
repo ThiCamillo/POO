@@ -63,8 +63,8 @@ public class Endereco {
 
 	@Override
 	public String toString() {
-		return "Endereco:" + "\nRua: " + rua + "\nNumero: " + numero + "\nBairro: " + bairro + "\nCidade: " + cidade
-				+ "\nEstado: " + estado;
+		return "Rua: " + this.getRua() + ", Numero: " + this.getNumero() + ", Bairro: " + this.getBairro()
+				+ ", Cidade: " + this.getCidade() + ", Estado: " + this.getEstado();
 	}
 
 }

@@ -32,5 +32,13 @@ public class Estoque {
 		this.remedios = remedios;
 	}
 
+	public double calcularEstoque() {
+		double total = 0;
+		for (Remedio remedio: this.getRemedios()) {
+			total += remedio.getPreco();
+		}
+		return total;
+	}
+
 	
 }
