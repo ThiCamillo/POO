@@ -4,8 +4,9 @@ public class Farmacia extends Empresa {
 
 	private Estoque estoque;
 
-	public Farmacia(String nome, String cnpj, Endereco endereco) {
+	public Farmacia(String nome, String cnpj, Endereco endereco, Estoque estoque) {
 		super(nome, cnpj, endereco);
+		this.estoque = estoque;
 	}
 
 	public Farmacia() {
@@ -21,7 +22,7 @@ public class Farmacia extends Empresa {
 	}
 
 	public void informarNomeDoResponsavelPeloEstoque() {
-		System.out.println("O responsável pelo estoque é o: " + this.getEstoque().getResponsavel());
+		System.out.println("O responsável pelo estoque é o : " + this.getEstoque().getResponsavel());
 		
 	}
 
