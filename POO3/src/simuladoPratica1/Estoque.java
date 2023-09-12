@@ -32,7 +32,7 @@ public class Estoque {
 		this.remedios = remedios;
 	}
 
-	public double calcularEstoque() {
+	public double calcularTotalEstoque() {
 		double total = 0;
 		for (Remedio remedio: this.getRemedios()) {
 			total += remedio.getPreco();
@@ -40,5 +40,24 @@ public class Estoque {
 		return total;
 	}
 
+	public void calcularTotalEstoquePorLaboratorio(String lab) {
+		double total = 0;
+		for(int i = 0; i < this.getRemedios().length; i++) {
+			if(this.getRemedios()[i].getLaboratorio().getNome().equalsIgnoreCase(lab)) {
+				total += this.getRemedios()[i].getPreco();
+			}
+		}
+		System.out.println("Total do estoque do laboratorio " + lab + ": " + total);
+	}
+
+	public Laboratorio buscarInformacoesDoLaboratorio(String lab) {
+		Laboratorio laboratorio = null;
+		for(Remedio remedio: this.getRemedios()) {
+			if(remedio.getLaboratorio().getNome().equalsIgnoreCase(lab)) {
+				laboratorio = remedio.getLaboratorio();
+			}
+		}
+		return laboratorio;
+	}
 	
 }

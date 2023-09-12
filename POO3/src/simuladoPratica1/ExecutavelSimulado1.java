@@ -24,16 +24,24 @@ public class ExecutavelSimulado1 {
 		Remedio[] listaRemedios = { rem1, rem1, rem1, rem1, rem2, rem2, rem2, rem3, rem3, rem4, rem5, rem6, rem6, rem7, rem7,
 				rem7, rem8, rem8, rem8, rem8 };
 
-		Estoque estoque1 = new Estoque("Luciano", listaRemedios);
+		Estoque estoque = new Estoque("Luciano", listaRemedios);
 		
 		Endereco endFarm = new Endereco("RUA JARDIM SILVA", 360, "CENTRO", "FLORIANÓPOLIS", "SANTA CATARINA");
-		Farmacia farm1 = new Farmacia("FARMÁCIA DO SENAC", "12.345.678/0001-33", endFarm);
+		Farmacia farm1 = new Farmacia("FARMÁCIA DO SENAC", "12.345.678/0001-33", endFarm, estoque);
 
 		//3A
 		farm1.informarNomeDoResponsavelPeloEstoque();
 		
 		//3B
 		farm1.calcularTotalEstoque();
+		
+		//3C
+		farm1.calcularTotalEstoquePorLaboratorio("Legrand");
+		
+		//3D
+		farm1.buscarInformacoesDoLaboratorio("Medley");
+		
+		
 		
 	}
 }

@@ -26,8 +26,18 @@ public class Farmacia extends Empresa {
 	}
 
 	public void calcularTotalEstoque() {
-		double total = this.getEstoque().calcularEstoque();
+		double total = this.getEstoque().calcularTotalEstoque();
 		System.out.println("Total do Estoque:" + total);
+	}
+
+	public void calcularTotalEstoquePorLaboratorio(String lab) {
+		this.getEstoque().calcularTotalEstoquePorLaboratorio(lab);
+	}
+
+	public void buscarInformacoesDoLaboratorio(String lab) {
+		Laboratorio laboratorio = this.getEstoque().buscarInformacoesDoLaboratorio(lab);
+		String mensagem = "Informações do laboratório " + lab + ": \n";
+		System.out.println(laboratorio != null ? mensagem + laboratorio : mensagem + "Laboratório não encontrado!");
 	}
 
 }
