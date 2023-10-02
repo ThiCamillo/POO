@@ -13,8 +13,8 @@ public class Circulo extends FormasGeometricas {
 		this.raio = raio;
 	}
 
-	public Circulo(String nome) {
-		super(nome);
+	public Circulo() {
+		super();
 	}
 
 	public double getRaio() {
