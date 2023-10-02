@@ -1,6 +1,6 @@
 package polimorfismo;
 
-public abstract class Triangulo extends FormasGeometricas{
+public abstract class Triangulo extends FormasGeometricas {
 
 	public Triangulo(String nome) {
 		super(nome);
@@ -11,6 +11,7 @@ public abstract class Triangulo extends FormasGeometricas{
 	}
 
 	public abstract double calcularArea();
+
 	public abstract double calcularPerimetro();
-	
+
 }
