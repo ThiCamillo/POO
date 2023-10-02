@@ -1,6 +1,11 @@
 package polimorfismo;
 
+import java.text.DecimalFormat;
+
 public class Circulo extends FormasGeometricas {
+	
+	DecimalFormat formatador = new DecimalFormat("0.00");
+			
 	private double raio;
 
 	public Circulo(String nome, double raio) {

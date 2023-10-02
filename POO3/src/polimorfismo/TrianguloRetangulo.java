@@ -1,7 +1,11 @@
 package polimorfismo;
 
+import java.text.DecimalFormat;
+
 public class TrianguloRetangulo extends Triangulo {
 
+	DecimalFormat formatador = new DecimalFormat("0.00");
+	
 	private double base;
 	private double altura;
 

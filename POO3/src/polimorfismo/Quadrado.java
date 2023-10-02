@@ -1,6 +1,11 @@
 package polimorfismo;
 
+import java.text.DecimalFormat;
+
 public class Quadrado extends FormasGeometricas {
+	
+	DecimalFormat formatador = new DecimalFormat("0.00");
+	
 	private double lado;
 
 	public Quadrado(String nome, double lado) {

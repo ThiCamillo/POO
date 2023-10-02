@@ -1,7 +1,11 @@
 package polimorfismo;
 
+import java.text.DecimalFormat;
+
 public class Retangulo extends FormasGeometricas {
 
+	DecimalFormat formatador = new DecimalFormat("0.00");
+	
 	private double ladoA;
 	private double ladoB;
 

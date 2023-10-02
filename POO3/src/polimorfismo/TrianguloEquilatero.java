@@ -1,7 +1,11 @@
 package polimorfismo;
 
+import java.text.DecimalFormat;
+
 public class TrianguloEquilatero extends Triangulo {
 
+	DecimalFormat formatador = new DecimalFormat("0.00");
+	
 	private double lado;
 
 	public TrianguloEquilatero(String nome, double lado) {
