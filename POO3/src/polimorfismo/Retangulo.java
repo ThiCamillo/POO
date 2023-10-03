@@ -46,4 +46,12 @@ public class Retangulo extends FormasGeometricas {
 		return (2 * this.getLadoA() + (2 * this.getLadoB()));
 	}
 
+	@Override
+	public String toString() {
+		return "Nome da Figura: Retangulo" 
+				+ "\nLado A: " + this.getLadoA()
+				+ "\nLado B: " + this.getLadoB()
+				+ "\nPerimetro: " + formatador.format(this.calcularPerimetro())
+				+ "\nArea: " + formatador.format(this.calcularArea());
+	}
 }

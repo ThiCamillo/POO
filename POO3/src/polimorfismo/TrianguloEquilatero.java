@@ -35,4 +35,13 @@ public class TrianguloEquilatero extends Triangulo {
 		return 3 * this.getLado();
 	}
 
+	@Override
+	public String toString() {
+		return "Nome da Figura: Triangulo Equilatero" 
+				+ "\nLado: " + this.getLado()
+				+ "\nPerimetro: " + formatador.format(this.calcularPerimetro())
+				+ "\nArea: " + formatador.format(this.calcularArea());
+	}
+
+	
 }
