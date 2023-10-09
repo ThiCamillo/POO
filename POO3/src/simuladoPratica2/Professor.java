@@ -1,6 +1,6 @@
 package simuladoPratica2;
 
-public class Professor extends Pessoa{
+public class Professor extends Pessoa {
 
 	private String disciplina;
 
@@ -11,7 +11,6 @@ public class Professor extends Pessoa{
 
 	public Professor() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public String getDisciplina() {
@@ -21,6 +20,5 @@ public class Professor extends Pessoa{
 	public void setDisciplina(String disciplina) {
 		this.disciplina = disciplina;
 	}
-	
-	
+
 }

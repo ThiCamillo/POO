@@ -17,7 +17,6 @@ public class Endereco {
 	}
 	public Endereco() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 	public String getRua() {
 		return rua;
