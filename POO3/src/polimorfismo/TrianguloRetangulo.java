@@ -45,4 +45,13 @@ public class TrianguloRetangulo extends Triangulo {
 		return (this.getBase() + this.getAltura() + Math.hypot(this.getBase(), this.getAltura()));
 	}
 
+	@Override
+	public String toString() {
+		return "Nome da Figura: Triangulo Retangulo" 
+				+ "\nBase: " + this.getBase()
+				+ "\nAltura: " + this.getAltura()
+				+ "\nPerimetro: " + formatador.format(this.calcularPerimetro())
+				+ "\nArea: " + formatador.format(this.calcularArea());
+	}
+	
 }

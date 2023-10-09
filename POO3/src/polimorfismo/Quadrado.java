@@ -36,5 +36,13 @@ public class Quadrado extends FormasGeometricas {
 	public double calcularPerimetro() {
 		return 4 * this.getLado();
 	}
+	
+	@Override
+	public String toString() {
+		return "Nome da Figura: Quadrado" 
+				+ "\nLado: " + this.getLado()
+				+ "\nPerimetro: " + formatador.format(this.calcularPerimetro())
+				+ "\nArea: " + formatador.format(this.calcularArea());
+	}
 
 }

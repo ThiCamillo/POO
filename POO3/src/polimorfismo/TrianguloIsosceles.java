@@ -2,20 +2,20 @@ package polimorfismo;
 
 import java.text.DecimalFormat;
 
-public class TrianguloIsoceles extends Triangulo {
+public class TrianguloIsosceles extends Triangulo {
 
 	DecimalFormat formatador = new DecimalFormat("0.00");
 	
 	private double base;
 	private double altura;
 
-	public TrianguloIsoceles(String nome, double base, double altura) {
+	public TrianguloIsosceles(String nome, double base, double altura) {
 		super(nome);
 		this.base = base;
 		this.altura = altura;
 	}
 
-	public TrianguloIsoceles(String nome) {
+	public TrianguloIsosceles(String nome) {
 		super(nome);
 	}
 
@@ -43,6 +43,15 @@ public class TrianguloIsoceles extends Triangulo {
 	@Override
 	public double calcularPerimetro() {
 		return (2 * this.getBase() + (2 * Math.hypot(this.getBase(), this.getAltura())));
+	}
+	
+	@Override
+	public String toString() {
+		return "Nome da Figura: Triangulo Isosceles" 
+				+ "\nBase: " + this.getBase()
+				+ "\nAltura: " + this.getAltura()
+				+ "\nPerimetro: " + formatador.format(this.calcularPerimetro())
+				+ "\nArea: " + formatador.format(this.calcularArea());
 	}
 
 }
