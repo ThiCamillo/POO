@@ -50,13 +50,8 @@ public class Turma {
 	public void listarAlunasPorCidade(String cidade) {
 		for (int i = 0; i < this.getAlunos().length; i++) {
 			if (this.getAlunos()[i].getEndereco().getCidade().equals(cidade)) {
-<<<<<<< HEAD
-			}
-			System.out.println(this.getAlunos()[i].getNome());
-=======
 				System.out.println(this.getAlunos()[i].getNome());
 			}
->>>>>>> refs/remotes/origin/master
 		}
 	}
 }

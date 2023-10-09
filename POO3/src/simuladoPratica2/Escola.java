@@ -56,10 +56,7 @@ public class Escola {
 		for (Turma turma : this.getTurmas()) {
 			total += turma.getAlunos().length;
 		}
-<<<<<<< HEAD
 		System.out.println("O total de alunas da escola é: " + total);
-=======
-		System.out.println("O total de alunas é: " + total);
 	}
 
 	public void localizarEnderecoRegente(String nome) {
@@ -73,27 +70,6 @@ public class Escola {
 
 	public void listarAlunasPorSerie(int serie) {
 		System.out.println("\nLista de Alunas da Série: " + serie);
-		for(int i=0; i< this.getTurmas().length; i++) {
-			if(this.getTurmas()[i].getSerie() == serie) {
-				this.getTurmas()[i].listarAlunas();
-			}
-		}
-		
->>>>>>> refs/remotes/origin/master
-	}
-
-<<<<<<< HEAD
-	public void localizarEnderecoRegente(String nome) {
-		System.out.println("\nEndereço do regente: " + nome);
-		for (Turma turma : this.getTurmas()) {
-			if (turma.getRegente().getNome().equals(nome)) {
-				System.out.println(turma.getRegente().getEndereco());
-			}
-		}
-	}
-
-	public void listarAlunasPorSerie(int serie) {
-		System.out.println("\nLista de Alunas da série: " + serie);
 		for (int i = 0; i < this.getTurmas().length; i++) {
 			if (this.getTurmas()[i].getSerie() == serie) {
 				this.getTurmas()[i].listarAlunas();
@@ -101,36 +77,20 @@ public class Escola {
 		}
 	}
 
-=======
->>>>>>> refs/remotes/origin/master
 	public void identificarRegenteMaisJovem() {
 		Professor maisNovo = this.getTurmas()[0].getRegente();
-<<<<<<< HEAD
 		for (int i = 0; i < this.getTurmas().length; i++) {
 			if (this.getTurmas()[i].getRegente().getIdade() < maisNovo.getIdade()) {
 				maisNovo = this.getTurmas()[i].getRegente();
 			}
 		}
 		System.out.println("\nRegente mais novo: " + maisNovo.getNome());
-=======
-		for(int i=0; i< this.getTurmas().length; i++) {
-			if(this.getTurmas()[i].getRegente().getIdade() < maisNovo.getIdade()) {
-				maisNovo = this.getTurmas()[i].getRegente();
-			}
-		}
-		System.out.println("\nRegente mais Novo: " + maisNovo.getNome());
->>>>>>> refs/remotes/origin/master
 	}
 
 	public void listarAlunasPorCidade(String cidade) {
 		System.out.println("\nLista de Alunas da cidade: " + cidade);
-<<<<<<< HEAD
 		for (int i = 0; i < this.getTurmas().length; i++) {
-=======
-		for(int i=0; i<this.getTurmas().length; i++) {
->>>>>>> refs/remotes/origin/master
 			this.getTurmas()[i].listarAlunasPorCidade(cidade);
 		}
 	}
-
 }
